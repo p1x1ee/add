@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+    #container{
+      margin: auto;
+      width: 300px;
+      height: 300px;
+      background-color: hotpink;
+    }
+  </style>
+<script>
+function add()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  sum = numOne + numTwo;
+  document.getElementById("answer").value = sum;
+}
+</script>
+</head>
+<body>
+
+<div id="container">
+  <div class="col-sm-6 col-md-4 col-ig-4 col-xl-12 ">
+    <center>
+<h2>Enter the First Number: <input id="first"></h2>
+<h2>Enter the Second Number: <input id="second"></h2>
+<button onclick="add()">Add</button>
+<h2>Sum = <input id="answer"></h2>
+  </center>
+</div>
+</body>
+</html>
