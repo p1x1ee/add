@@ -3,11 +3,25 @@
 <head>
   <style>
     #container{
+      border:3px dotted white ;
       margin: auto;
-      width: 300px;
-      height: 300px;
+      width: 450px;
+      height:400px;
+      
       background-color: hotpink;
     }
+    .button {
+      width:100px;
+      height: 38px;
+      
+  background-color:black;
+  color: white;
+  border: 1px solid white; /* Green */
+}
+h1 {
+  text-decoration: underline;
+}
+
   </style>
 <script>
 function add()
@@ -23,13 +37,17 @@ function add()
 <body>
 
 <div id="container">
-  <div class="col-sm-6 col-md-4 col-ig-4 col-xl-12 ">
-    <center>
-<h2>Enter the First Number: <input id="first"></h2>
+    <center><div id="h1"> <h1>sum calculator</h1></div>
+<h2>Enter the   First Number    : <br><input id="first"></h2>
 <h2>Enter the Second Number: <input id="second"></h2>
-<button onclick="add()">Add</button>
+
+<input type="button" class="button" value="add" button onclick="add()">
+
+
 <h2>Sum = <input id="answer"></h2>
+</div>
   </center>
 </div>
 </body>
 </html>
+
