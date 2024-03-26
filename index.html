@@ -1,18 +1,20 @@
-
-   
 <!doctype html>
 <html>
 <head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <style>
     
     #container{
+      transform: scale(1.); /* (10% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+       border-radius: 30px;
+      box-sizing: border-box;
+      width: 80%
       
-       
-      
-    box-sizing: border-box;
-      width: 80%;
-      height:;
-      margin: 20px;
+      border-radius:auto;
+      margin-left: 20px;
       padding-right: 10%;
       padding-left: 10%;
       padding-top: 60px;
@@ -50,8 +52,8 @@ function add()
   <div class="">
           
     <center><div id="h1"> <h1>sum calculator</h1></div>
-<h2>First Number    : <input id="first" ></h2>
-<h2>Second Number: <input id="second"></h2>
+<br><h2>First Number    : <input id="first" ></h2>
+<br><h2>Second Number: <input id="second"></h2>
 
 <input type="button" class="button" value="add" button onclick="add()">
 
